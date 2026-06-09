@@ -8,7 +8,7 @@ const genCompChoice = () => {
     return option[randIdx]
 }
 ```
-This script checks if the game is draw or not.
+This script shows draw.
 ```javascript
 const drawGame = () => {
     msg.innerText = "Draw!"
