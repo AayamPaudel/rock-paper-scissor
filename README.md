@@ -15,3 +15,21 @@ const drawGame = () => {
     msg.style.background = "#081b31"
 }
 ```
+The following script shows winner.
+```javascript
+const showWinner = (userWin, userChoice, compChoice) => {
+    if (userWin) {
+        userScore++
+        userScorePara.innerText = userScore
+        msg.innerText = `You win! ${userChoice} beats ${compChoice}`
+        msg.style.backgroundColor = "green"
+    }
+
+    else {
+        compScore++
+        compScorePara.innerText = compScore
+        msg.innerText = `You lost! ${compChoice} beats ${userChoice}`
+        msg.style.backgroundColor = "red"
+    }
+}
+```
