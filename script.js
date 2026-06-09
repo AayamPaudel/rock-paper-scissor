@@ -69,5 +69,3 @@ choices.forEach((choice) => {
         playGame(userChoice)
     })
 })
-
-audio.autoplay = false
