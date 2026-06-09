@@ -19,6 +19,8 @@ The following script shows winner.
 ```javascript
 const showWinner = (userWin, userChoice, compChoice) => {
     if (userWin) {
+        audio.currentTime = 0
+        audio.play()
         userScore++
         userScorePara.innerText = userScore
         msg.innerText = `You win! ${userChoice} beats ${compChoice}`
@@ -40,6 +42,7 @@ let compScore = 0
 
 const choices = document.querySelectorAll(".choice")
 const msg = document.getElementById("msg")
+const audio = document.getElementById("winsound")
 
 const userScorePara = document.getElementById("user-score")
 const compScorePara = document.getElementById("comp-score")
@@ -57,6 +60,8 @@ const drawGame = () => {
 
 const showWinner = (userWin, userChoice, compChoice) => {
     if (userWin) {
+        audio.currentTime = 0
+        audio.play()
         userScore++
         userScorePara.innerText = userScore
         msg.innerText = `You win! ${userChoice} beats ${compChoice}`
